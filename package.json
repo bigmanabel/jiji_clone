@@ -1,0 +1,25 @@
+{
+  "name": "jiji_clone",
+  "version": "1.0.0",
+  "description": "Jiji Clone",
+  "main": "dist/index.js",
+  "author": "bigmanabel",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.8",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "start": "node /dist/index.js",
+    "watch": "nodemon /dist/index.js",
+    "dev": "concurrently \"yarn build\" \"yarn watch\"",
+    "build": "tsc --watch"
+  }
+}
